@@ -1,0 +1,6 @@
+<ng-container *ngIf="loaded">
+  <svg [attr.viewBox]="viewBox" [innerHTML]="path | safeHtml"></svg>
+</ng-container>
+<ng-container *ngIf="!loaded">
+  <div class="placeholder"></div>
+</ng-container>
